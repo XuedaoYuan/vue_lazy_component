@@ -1,29 +1,4 @@
-# test_app
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Vue-lazy-component
+Vue的一种懒加载的实现方式，可以添加骨架屏
+参考的是https://github.com/xunleif2e/vue-lazy-component
+使用 intersectionObserver Api 以及对应polyfill
