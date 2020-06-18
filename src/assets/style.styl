@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: PingFangSC-Regular,PingFang SC, "微软雅黑", sans-serif;
+    // font-family: PingFangSC-Regular, PingFang SC, Microsoft YaHei, -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue, Source Han Sans SC, Noto Sans CJK SC, sans-serif;
+    -webkit-font-smoothing: antialiased; /* chrome、safari */
+    -moz-osx-font-smoothing: grayscale; /* firefox */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #d9e5ef;
+    font-family: PingFangSC-Regular, PingFang SC, Microsoft YaHei, -apple-system, BlinkMacSystemFont, Arial Regular, Helvetica Neue, Source Han Sans SC, Noto Sans CJK SC, sans-serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.lazy-component-enter {
+    opacity: 0;
+}
+
+.lazy-component-enter-to {
+    opacity: 1;
+}
+
+.lazy-component-enter-active {
+    transition: opacity 0.3s 0.2s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.lazy-component-leave {
+    opacity: 1;
+}
+
+.lazy-component-leave-to {
+    opacity: 0;
+}
+
+.lazy-component-leave-active {
+    transition: opacity 0.5s;
+}
+
+.custom-transition .lazy-component-enter {
+    opacity: 0;
+    transform: scale(0.4) translate(100%);
+}
+
+.custom-transition .lazy-component-enter-to {
+    opacity: 1;
+}
+
+.custom-transition .lazy-component-enter-active {
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.custom-transition .lazy-component-leave {
+    opacity: 1;
+}
+
+.custom-transition .lazy-component-leave-to {
+    opacity: 0;
+    transform: scale(0.4) translate(-100%);
+}
+
+.custom-transition .lazy-component-leave-active {
+    transition: all 0.5s;
+}
